@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - Shanghai</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="2017.html">2017</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="2017-Shanghai.html">Shanghai</a>
+      </nav>
+    
+    <ul id="galleries">
+    </ul>
+    
+    <ul id="media">
+        
+          <li data-src="media/large/2017/Shanghai/2017Sep28.jpg"
+              data-sub-html=""
+              data-download-url="media/large/2017/Shanghai/2017Sep28.jpg"
+              
+              data-filename="2017Sep28.jpg"
+        
+            >
+            <a href="media/large/2017/Shanghai/2017Sep28.jpg">
+              <img src="media/thumbs/2017/Shanghai/2017Sep28.jpg"
+                   width="120"
+                   height="120"
+                   alt="2017Sep28.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/campus.JPG"
+              data-sub-html="Processed with VSCO with a6 preset"
+              data-download-url="media/large/2017/Shanghai/campus.JPG"
+              
+              data-filename="campus.JPG"
+        
+            >
+            <a href="media/large/2017/Shanghai/campus.JPG">
+              <img src="media/thumbs/2017/Shanghai/campus.JPG"
+                   width="120"
+                   height="120"
+                   alt="campus.JPG" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/2017Dec13.jpg"
+              data-sub-html="Processed with VSCO with 7 preset"
+              data-download-url="media/large/2017/Shanghai/2017Dec13.jpg"
+              
+              data-filename="2017Dec13.jpg"
+        
+            >
+            <a href="media/large/2017/Shanghai/2017Dec13.jpg">
+              <img src="media/thumbs/2017/Shanghai/2017Dec13.jpg"
+                   width="120"
+                   height="120"
+                   alt="2017Dec13.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/2017Dec31.jpg"
+              data-sub-html="Processed with VSCO with 3 preset"
+              data-download-url="media/large/2017/Shanghai/2017Dec31.jpg"
+              
+              data-filename="2017Dec31.jpg"
+        
+            >
+            <a href="media/large/2017/Shanghai/2017Dec31.jpg">
+              <img src="media/thumbs/2017/Shanghai/2017Dec31.jpg"
+                   width="120"
+                   height="120"
+                   alt="2017Dec31.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/2018Jan08.jpg"
+              data-sub-html="Processed with VSCO with m2 preset"
+              data-download-url="media/large/2017/Shanghai/2018Jan08.jpg"
+              
+              data-filename="2018Jan08.jpg"
+        
+            >
+            <a href="media/large/2017/Shanghai/2018Jan08.jpg">
+              <img src="media/thumbs/2017/Shanghai/2018Jan08.jpg"
+                   width="120"
+                   height="120"
+                   alt="2018Jan08.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/2018Jan20.jpg"
+              data-sub-html="Processed with VSCO with b3 preset"
+              data-download-url="media/large/2017/Shanghai/2018Jan20.jpg"
+              
+              data-filename="2018Jan20.jpg"
+        
+            >
+            <a href="media/large/2017/Shanghai/2018Jan20.jpg">
+              <img src="media/thumbs/2017/Shanghai/2018Jan20.jpg"
+                   width="120"
+                   height="120"
+                   alt="2018Jan20.jpg" />
+            </a>
+          </li>    
+          <li data-src="media/large/2017/Shanghai/waitan.JPG"
+              data-sub-html=""
+              data-download-url="media/large/2017/Shanghai/waitan.JPG"
+              
+              data-filename="waitan.JPG"
+        
+            >
+            <a href="media/large/2017/Shanghai/waitan.JPG">
+              <img src="media/thumbs/2017/Shanghai/waitan.JPG"
+                   width="120"
+                   height="120"
+                   alt="waitan.JPG" />
+            </a>
+          </li></ul>
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

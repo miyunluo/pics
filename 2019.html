@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - 2019</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="2019.html">2019</a>
+      </nav>
+    
+    <ul id="galleries">
+     <li>
+       <a href="2019-Campus.html">
+         <h3>Campus</h3>
+         <div class="meta">
+           9 photos<br />
+           23 Jan 2019 - 11 May 2019
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2019/Campus/fog1.JPG" /></li><li><img src="media/thumbs/2019/Campus/fog0.JPG" /></li><li><img src="media/thumbs/2019/Campus/supermoon0.JPG" /></li><li><img src="media/thumbs/2019/Campus/supermoon1.JPG" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="2019-LivingPlace.html">
+         <h3>LivingPlace</h3>
+         <div class="meta">
+           10 photos<br />
+           03 Feb 2019 - 26 May 2019
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2019/LivingPlace/snow.JPG" /></li><li><img src="media/thumbs/2019/LivingPlace/cloud.JPG" /></li><li><img src="media/thumbs/2019/LivingPlace/firstflower.JPG" /></li><li><img src="media/thumbs/2019/LivingPlace/sakura0.JPG" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="2019-Park.html">
+         <h3>Park</h3>
+         <div class="meta">
+           4 photos<br />
+           03 Feb 2019 - 20 Apr 2019
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2019/Park/park0.JPG" /></li><li><img src="media/thumbs/2019/Park/park1.JPG" /></li><li><img src="media/thumbs/2019/Park/park2.JPG" /></li><li><img src="media/thumbs/2019/Park/water.jpg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="2019-Downtown.html">
+         <h3>Downtown</h3>
+         <div class="meta">
+           3 photos<br />
+           20 Apr 2019 - 20 Apr 2019
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2019/Downtown/downtown1.JPG" /></li><li><img src="media/thumbs/2019/Downtown/downtown2.jpg" /></li><li><img src="media/thumbs/2019/Downtown/downtown0.JPG" /></li><li><img src="public/missing.png" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="2019-ShannonFalls.html">
+         <h3>ShannonFalls</h3>
+         <div class="meta">
+           2 photos<br />
+           13 Jun 2019 - 13 Jun 2019
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/2019/ShannonFalls/tree.JPG" /></li><li><img src="media/thumbs/2019/ShannonFalls/lake.JPG" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li>     </ul>
+       </a>
+     </li>
+    </ul>
+    
+    <ul id="media">
+    </ul>
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
